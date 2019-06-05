@@ -1,0 +1,42 @@
+.sections {
+  height: 800px;
+}
+.left {
+float: left;
+}
+
+.text {
+margin-left: 45%;
+font-size: 15px;
+}
+
+div {
+  width: 300px;
+  float: right;
+}
+ .center {
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 18%;
+  }
+ .quote {
+   margin-left: 36%;
+   padding-top: 28%;
+ }
+ .hidden {
+   opacity: 0;
+ }
+
+ @keyframes show {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
+ .show {
+   animation: show 600ms ease-in-out 0s forwards;
+ }
