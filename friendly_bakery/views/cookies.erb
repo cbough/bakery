@@ -1,3 +1,13 @@
+<style>
+  .card-img-top {
+    width: 60%;
+    height: 70%:
+  }
+  .card-block {
+    font-color: white;
+    font-size: 20px;
+  }
+</style>
 <h1><%=@header %></h1>
 <div class="container">
     <div class="row">
@@ -8,9 +18,10 @@
                 <div class="card-block">
                     <h4 class="card-title"><%= item.name%></h4>
                     <p class="card-text">Price per item: <%= item.price%></p>
+                    <p class="card-text">Description: <%= item.description%></p>
                 </div>
             </div>
         </div>
         <% end %>
     </div>
-</div>      
+</div>

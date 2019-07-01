@@ -1,3 +1,16 @@
+<style>
+  .card-img-top {
+    width: 60%;
+    height: 70%:
+  }
+  .card-block {
+    font-color: white;
+    font-size: 20px;
+  }
+  .card-text {
+    font-color: white;
+  }
+</style>
 <h1><%=@header %></h1>
 <div class="container">
     <div class="row">
@@ -6,11 +19,12 @@
             <div class="card">
                 <img class="card-img-top img-fluid" src=<%= item.image%> alt="Cookie">
                 <div class="card-block">
-                    <h4 class="card-title"><%= item.name%></h4>
+                    <h2 class="card-title"><%= item.name%></h2>
                     <p class="card-text">Price per item: <%= item.price%></p>
+                    <p class="card-text">Description: <%= item.description%></p>
                 </div>
             </div>
         </div>
         <% end %>
     </div>
-</div>      
+</div>
