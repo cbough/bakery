@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -14,7 +14,89 @@
       <a href="muffins">Muffins</a>
       <a href="cakes">Cakes</a>
     </div>
-    <%= yield %>
+
   </body>
   <script src="cool.js" charset="utf-8"></script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Patriot Bakery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <%# <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> %>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: url('images/br2.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      index-z: -1;
+    }
+
+    .navbar {
+      background-color: skyblue;
+    }
+    .nav {
+      font-size: 22px;
+      font-color: #fff;
+    }
+
+    .jumbotron {
+      margin-bottom: 0;
+    }
+
+    footer {
+      background-color: skyblue;
+      padding: 25px;
+    }
+  </style>
+</<head>
+<body>
+  <div class="jumbotron">
+  <div class="container text-center">
+    <h1>Patriotic Bakery</h1>
+    <p>We here at Patriotic support all our troops and veterans of the U.S military. To show our support we make lovely pastries that not only taste good but will surely envoke that americab spirrt. enjoy!</p>
+  </div>
+</div>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="cookies">Cookies</a></li>
+        <li><a href="muffins">Muffins</a></li>
+        <li><a href="cakes">Cakes</a></li>
+        <li><a href="event">Events</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="email"><span class="glyphicon glyphicon-log-in"></span>Email</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <%= yield %>
+
+
+  <footer class="container-fluid text-center">
+  <p>Copyright © 2019 Patriotic Pastries</p>
+  </footer>
+</body>
 </html>

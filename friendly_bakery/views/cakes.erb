@@ -1,1 +1,16 @@
-
+<h1><%=@header %></h1>
+<div class="container">
+    <div class="row">
+    <% @output.each do |item| %>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top img-fluid" src=<%= item.image%> alt="Cookie">
+                <div class="card-block">
+                    <h4 class="card-title"><%= item.name%></h4>
+                    <p class="card-text">Price per item: <%= item.price%></p>
+                </div>
+            </div>
+        </div>
+        <% end %>
+    </div>
+</div>      
